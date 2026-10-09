@@ -54,7 +54,7 @@ Programming Requirements
 - Clearly separate ordinary set results from multiset results.
 - Include comments explaining the major sections of code.
 - Make sure the program runs without modifications in a standard Java environment.
-- 
+  
 ---
 
 ## Planned Java Classes
@@ -83,6 +83,8 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
+| Define universal set with at least 10 elements | TBD |---|---|
+|Implement Boolean array representation for ordinary sets | Team | --- |---|
 | NOT(A) – complement of A with respect to the universal set | Gustavo |---|---|
 | A ∪ B – union | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A ∩ B – intersection | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
@@ -105,8 +107,46 @@ Programming Requirements
 
 ---
 
-## Testing
+## Testing 
 
+| Task | Owner | Status | Evidence |
+|---|---|---|---|
+| Create test plan | TBD |Not started|---|
+| Test ordinary set operations | TBD | Not started | --- |
+| Test multiset operations | TBD | ot started| --- |
+| Test sets with no common elements| TBD |ot started| --- |
+| Test empty sets or multisets | TBD |ot started|---|
+| Test repeated elements in multisets | TBD |ot started|---|
+
+---
+
+## Report and Final Deliverables
+
+| Task | Owner | Status | Evidence |
+|---|---|---|---|
+| Write introduction – explain the problem and why it is interesting/relevant. | TBD | Not Started |  |
+| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | TBD | Not Started |  |
+| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | TBD | Not Started |  |
+| Create tables with program results for all ordinary set operations| TBD | Not Started |  |
+| Create tables with program results for all multiset operations| TBD | Not Started |  |
+| Complete `README.md` | TBD | Not Started |  |
+| Complete `CONTRIBUTIONS.md` | Team | Not Started |  |
+| Record team screencast | Team | Not Started|  |
+| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | Not Started |
+| Edit team screencast | TBD | Not Started |  |
+| If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | TBD |  Not Started  |
+| Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | TBD | Not Started |
+| How easy or difficult is it to determine the type of set that you need to use based on the user’s natural-language query? Why? | TBD | Not Started |
+| Is it possible to store the data from one type of set (plain sets or multisets) in another type? Would you need to lose data in order to do so? Why? | TBD | Not Started |
+| Discuss what implications your answers to questions 1–4 have for someone trying to code an interface which would allow users to type in natural-language queries. | TBD | Not Started |
+| Discuss what implications your answers to questions 1–5 have for someone trying to code an interface which would allow users to access arbitrary types of data using natural language. | TBD | Not Started |
+| Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| TBD | Not Started |  |
+| Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| TBD | Not Started |  |
+| Write sources | TBD | Not Started |  |
+| Assemble final report | TBD | Not Started |  |
+| Review final submission package | TBD | Not Started |  |
+
+---
 
 # Milestones
 
@@ -149,5 +189,5 @@ Programming Requirements
 - Repository exported as ZIP
 - Final submission reviewed
 
-**Status:** In progress
+**Status:** Not Started
 
