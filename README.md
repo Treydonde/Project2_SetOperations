@@ -7,6 +7,7 @@ This project focuses on implementing ordinary set and multiset operations using 
 The project is divided into two parts:
 
 **Part 1 - Ordinary Sets:** Uses Boolean arrays to represent sets and perform operations.
+
 **Part 2 - Multisets:** Uses arrays to keep track of how many times each element appears and perform operations.
 
 The project also explores the differences between sets and multisets and how natural-language questions can make it difficult to determine which type of set should be used.
