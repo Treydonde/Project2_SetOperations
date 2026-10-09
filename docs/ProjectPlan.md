@@ -52,7 +52,7 @@
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | NOT(A) – complement of A with respect to the universal set | Gustavo |---|---|
-| A ∪ B – union | Ben | Done | [Commit 7d03e15]https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66 |
-| A ∩ B – intersection | Ben | Done | [Commit 7d03e15]https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66 |
-| A − B – set difference | Ben | Done | [Commit 7d03e15]https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66 |
+| A ∪ B – union | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
+| A ∩ B – intersection | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
+| A − B – set difference | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A ⊕ B – symmetric difference, defined as (A − B) ∪ (B − A) | Gustavo |---|---|
