@@ -1,4 +1,4 @@
-# Programming Project 2 - Sets and Multisets
+# Programming Project 2 - Sets Operations
 
 ## Overview
 
