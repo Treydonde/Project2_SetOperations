@@ -99,7 +99,7 @@ Programming Requirements
 |---|---|---|---|
 | Choose a structure to store element counts | TBD |Not started|---|
 | Implement multiset representation | TBD | Not started | --- |
-| Implement multiset union | TBD | ot started| --- |
+| Implement multiset union | TBD | Not started| --- |
 | Implement multiset intersection| TBD |Not started| --- |
 | Implement multiset difference | TBD |Not started|---|
 | Implement multiset sum | TBD |Not started|---|
