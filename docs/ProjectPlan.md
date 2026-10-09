@@ -100,10 +100,10 @@ Programming Requirements
 | Choose a structure to store element counts | TBD |Not started|---|
 | Implement multiset representation | TBD | Not started | --- |
 | Implement multiset union | TBD | ot started| --- |
-| Implement multiset intersection| TBD |ot started| --- |
-| Implement multiset difference | TBD |ot started|---|
-| Implement multiset sum | TBD |ot started|---|
-| Display elements and their counts | TBD |ot started|---|
+| Implement multiset intersection| TBD |Not started| --- |
+| Implement multiset difference | TBD |Not started|---|
+| Implement multiset sum | TBD |Not started|---|
+| Display elements and their counts | TBD |Not started|---|
 
 ---
 
@@ -113,10 +113,10 @@ Programming Requirements
 |---|---|---|---|
 | Create test plan | TBD |Not started|---|
 | Test ordinary set operations | TBD | Not started | --- |
-| Test multiset operations | TBD | ot started| --- |
-| Test sets with no common elements| TBD |ot started| --- |
-| Test empty sets or multisets | TBD |ot started|---|
-| Test repeated elements in multisets | TBD |ot started|---|
+| Test multiset operations | TBD | Not started| --- |
+| Test sets with no common elements| TBD |Not started| --- |
+| Test empty sets or multisets | TBD |Not started|---|
+| Test repeated elements in multisets | TBD |Not started|---|
 
 ---
 
