@@ -85,11 +85,11 @@ Programming Requirements
 |---|---|---|---|
 | Define universal set with at least 10 elements | TBD |---|---|
 |Implement Boolean array representation for ordinary sets | Team | --- |---|
-| NOT(A) – complement of A with respect to the universal set | Gustavo |---|---|
+| NOT(A) – complement of A with respect to the universal set | Gustavo |Done|---|
 | A ∪ B – union | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A ∩ B – intersection | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A − B – set difference | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
-| A ⊕ B – symmetric difference, defined as (A − B) ∪ (B − A) | Gustavo |---|---|
+| A ⊕ B – symmetric difference, defined as (A − B) ∪ (B − A) | Gustavo | In Progress |---|
 
 ---
 
@@ -99,19 +99,27 @@ Programming Requirements
 |---|---|---|---|
 | Choose a structure to store element counts | TBD |Not started|---|
 | Implement multiset representation | TBD | Not started | --- |
-| Implement multiset union | TBD | Not started| --- |
+| Implement multiset union | Gustavo | Not started| --- |
 | Implement multiset intersection| TBD |Not started| --- |
 | Implement multiset difference | TBD |Not started|---|
-| Implement multiset sum | TBD |Not started|---|
+| Implement multiset sum | Gustavo |Not started|---|
 | Display elements and their counts | TBD |Not started|---|
 
 ---
+
+# Fuzzy Set/Multiset Change Request
+
+| Task | Owner | Status | Evidence |
+|---|---|---|---|
+| Implement fuzzy union | TBD | Not started| --- |
+| Implement fuzzy complement | TBD |Not started| --- |
+| Implement fuzzy intersect | TBD |Not started|---|
 
 ## Testing 
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Create test plan | TBD |Not started|---|
+| Create test plan | Gustavo |Not started|---|
 | Test ordinary set operations | TBD | Not started | --- |
 | Test multiset operations | TBD | Not started| --- |
 | Test sets with no common elements| TBD |Not started| --- |
