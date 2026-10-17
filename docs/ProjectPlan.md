@@ -18,7 +18,6 @@
 | Benjamin Shaw | Implementation Lead | Core implementation, integration, and main branch health |
 | Gustavo Cabral | Verification Lead | Test plan, edge cases, testing, and verification evidence |
 | Camilla Feitosa Nunes | Communications Lead | Report assembly, run instructions, documentation, and deliverable packaging |
-| Paulina Cruz | TBD | TBD |
 ---
 
 ## Project Goal
@@ -67,13 +66,14 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Create GitHub repository | Gustavo | Done | Repository |
-| Add all team members to repository | Gustavo| Done | Repository |
-| Confirm instructor repository access | Gustavo | Not Started| - |
+| Create GitHub repository | Gustavo | Done | [Repository](https://github.com/Treydonde/Project2_SetOperations) |
+| Add all team members to repository | Gustavo| Done | [Repository](https://github.com/Treydonde/Project2_SetOperations) |
+| Confirm instructor repository access | Gustavo | Invite sent/ Project made public | [Repository](https://github.com/Treydonde/Project2_SetOperations) |
 | Assign team roles | Team | Done | `docs/ProjectPlan.md` |
 | Create `/docs` folder | Gustavo | Done | `docs/` |
 | Create Project Plan | Camila/Gustavo | In Progress | `docs/ProjectPlan.md` |
-| Create design artifacts | TBD | Not Started | - |
+| Create UML Diagram | Gustavo | Done | [CS2430_Project2_UML.png](https://github.com/Treydonde/Project2_SetOperations/blob/main/docs/CS2430_Project2_UML.png) |
+| Create PsuedoCode | Camilla | Done | [Sequence_PsuedoCode.md](https://github.com/Treydonde/Project2_SetOperations/blob/main/docs/Sequence_PseudoCode.md) |
 | Create `README.md` | Gustavo | Done | `README.md` |
 | Create `CONTRIBUTIONS.md` | Gustavo | Done | `docs/CONTRIBUTIONS.md` |
 
@@ -85,11 +85,11 @@ Programming Requirements
 |---|---|---|---|
 | Define universal set with at least 10 elements | TBD |---|---|
 |Implement Boolean array representation for ordinary sets | Team | --- |---|
-| NOT(A) – complement of A with respect to the universal set | Gustavo |Done|---|
+| NOT(A) – complement of A with respect to the universal set | Gustavo |Done| [99acf4d](https://github.com/Treydonde/Project2_SetOperations/commit/99acf4d6fb6b17ecd30fb55f76aa58eb258331d9) |
 | A ∪ B – union | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A ∩ B – intersection | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A − B – set difference | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
-| A ⊕ B – symmetric difference, defined as (A − B) ∪ (B − A) | Gustavo | In Progress |---|
+| A ⊕ B – symmetric difference, defined as (A − B) ∪ (B − A) | Gustavo | Done | [f125476](https://github.com/Treydonde/Project2_SetOperations/commit/f125476448d928bb1e599b43f6bd6eca2f4a5a49) |
 
 ---
 
@@ -119,8 +119,8 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Create test plan | Gustavo |Not started|---|
-| Test ordinary set operations | TBD | Not started | --- |
+| Create test plan | Gustavo | In Progress |  |
+| Test ordinary set operations | Gustavo | In Progress | [Union_tests](https://github.com/Treydonde/Project2_SetOperations/tree/tests/Union_tests), [intersection_tests](https://github.com/Treydonde/Project2_SetOperations/tree/tests/intersection_tests),  |
 | Test multiset operations | TBD | Not started| --- |
 | Test sets with no common elements| TBD |Not started| --- |
 | Test empty sets or multisets | TBD |Not started|---|
