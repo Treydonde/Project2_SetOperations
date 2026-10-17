@@ -34,7 +34,7 @@ public class SetDifference {
         boolean[] setDiff = new boolean[10];
         for (int i = 0; i < 10; i++){
             // (first || !second) == (a - b)
-            setDiff[i] = first[i] || !second[i];
+            setDiff[i] = first[i] && !second[i];
         }
         return setDiff;
     }
