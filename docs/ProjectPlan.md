@@ -141,16 +141,16 @@ Programming Requirements
 | Complete `CONTRIBUTIONS.md` | Team | Not Started |  |
 | Record team screencast | Team | Not Started|  |
 | Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | Not Started |
-| Edit team screencast | TBD | Not Started |  |
-| If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | TBD |  Not Started  |
-| Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | TBD | Not Started |
+| Edit team screencast | Gustavo | Not Started |  |
+| If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | Gustavo |  Not Started  |
+| Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | Gustavo | Not Started |
 | How easy or difficult is it to determine the type of set that you need to use based on the user’s natural-language query? Why? | TBD | Not Started |
 | Is it possible to store the data from one type of set (plain sets or multisets) in another type? Would you need to lose data in order to do so? Why? | TBD | Not Started |
 | Discuss what implications your answers to questions 1–4 have for someone trying to code an interface which would allow users to type in natural-language queries. | TBD | Not Started |
 | Discuss what implications your answers to questions 1–5 have for someone trying to code an interface which would allow users to access arbitrary types of data using natural language. | TBD | Not Started |
 | Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| TBD | Not Started |  |
 | Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| TBD | Not Started |  |
-| Write sources | TBD | Not Started |  |
+| Write sources | Gustavo | Not Started |  |
 | Assemble final report | TBD | Not Started |  |
 | Review final submission package | TBD | Not Started |  |
 
