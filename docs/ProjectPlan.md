@@ -154,6 +154,16 @@ Programming Requirements
 | Assemble final report | TBD | Not Started |  |
 | Review final submission package | TBD | Not Started |  |
 
+
+## The Change Impact Analysis - Report
+
+| Task | Owner | Status | Evidence |
+|---|---|---|---|
+| What changed: Identify the classes, functions, modules, or data representations you added or modified, and explain why. | TBD | Not Started |  |
+| What did not change: Identify components you reused without modification and explain what allowed that reuse. | TBD | Not Started |  |
+| Refactoring: Describe any restructuring of existing code. Explain how it supported the new functionality and how you verified existing Set and Multiset behavior. | TBD | Not Started |  |
+| Design strengths and weaknesses: Identify original assumptions or design choices that made the extension easier or more difficult. | TBD | Not Started |  |
+| Lessons learned: Explain what you would design differently if starting again and connect that lesson to this change order. | TBD | Not Started |  |
 ---
 
 # Milestones
