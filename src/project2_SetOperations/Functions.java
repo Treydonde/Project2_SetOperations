@@ -1,7 +1,7 @@
 package project2_SetOperations;
 
 /**
- *
+ * The function class
  *
  * @author Benajamin Shaw
  */
@@ -9,6 +9,17 @@ public class Functions {
 
     private float[] first = new float[10];
     private float[] second = new float[10];
+
+    public float[] union() {
+
+        float[] union = new float[10];
+
+        for (int i = 0; i < 10; i++) {
+
+            union[i] = Math.max(first[i], second[i]);
+        }
+        return union;
+    }
 
     /**
      *
@@ -34,6 +45,7 @@ public class Functions {
 
     /**
      *
+     *
      * @return
      */
     public float[] difference() {
@@ -44,5 +56,20 @@ public class Functions {
             multiDiff[i] = (multiDiff[i] < 0) ? 0 : multiDiff[i];
         }
         return multiDiff;
+    }
+
+    /**
+     * Does the complement of the value that is given in
+     *
+     * @param comp
+     * @return comp
+     */
+    public float[] complement(float[] comp) {
+
+        for (int i = 0; i < 10; i++) {
+            comp[i] = 1 - comp[i];
+        }
+
+        return comp;
     }
 }
