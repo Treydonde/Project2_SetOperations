@@ -1,28 +1,32 @@
 package project2_SetOperations;
 
 /**
- * The function class
+ * Provides set, multiset, and fuzzy-set operations on two arrays.
  *
- *
+ * Group 2
+ * Gustavo Cabral, Ben Shaw, Camilla Feitosa Nunes
+ * Course and section (CS 2430, section ___)
+ * Project name (Programming Project 2 – (term) 202_)
  */
 public class Functions {
 
-    private float[] first = new float[10];
-    private float[] second = new float[10];
+    private final float[] first = new float[10];
+    private final float[] second = new float[10];
 
     /**
-     *
+     * constructor with defensive copies
      * @param first
      * @param second
      */
     public Functions(float[] first, float[] second) {
-        this.first = first;
-        this.second = second;
+        this.first = first.clone();
+        this.second = second.clone();
     }
 
     /**
+     * Calculates the union by taking the larger value
      *
-     * @return
+     * @return a new array containing the union
      */
     public float[] union() {
 
@@ -36,8 +40,9 @@ public class Functions {
     }
 
     /**
+     * Calculates the intersection by taking the lower value
      *
-     * @return
+     * @return a new array containing the intersection
      */
     public float[] intersection() {
         float[] intersection = new float[10];
@@ -55,9 +60,7 @@ public class Functions {
     public float[] difference() {
         float[] multiDiff = new float[10];
         for (int i = 0; i < 10; i++) {
-            multiDiff[i] = first[i] - second[i];
-
-            multiDiff[i] = (multiDiff[i] < 0) ? 0 : multiDiff[i];
+            multiDiff[i] = Math.max(first[i] - second[i], 0);
         }
         return multiDiff;
     }
@@ -77,6 +80,10 @@ public class Functions {
         return comp;
     }
 
+    /**
+     * Returns the symmetric difference of two float arrays
+     * @return
+     */
     public float[] symmetricDifference() {
         float[] symmDiff = new float[first.length];
 
