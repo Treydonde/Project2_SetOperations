@@ -132,11 +132,11 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Write introduction – explain the problem and why it is interesting/relevant. | TBD | Not Started |  |
-| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | TBD | Not Started |  |
-| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | TBD | Not Started |  |
-| Create tables with program results for all ordinary set operations| TBD | Not Started |  |
-| Create tables with program results for all multiset operations| TBD | Not Started |  |
+| Write introduction – explain the problem and why it is interesting/relevant. | Camilla | Not Started |  |
+| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | Camilla/Team | Not Started |  |
+| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | Camilla | Not Started |  |
+| Create tables with program results for all ordinary set operations| Camilla | Not Started |  |
+| Create tables with program results for all multiset operations| Camilla | Not Started |  |
 | Complete `README.md` | TBD | Not Started |  |
 | Complete `CONTRIBUTIONS.md` | Team | Not Started |  |
 | Record team screencast | Team | Not Started|  |
@@ -151,7 +151,7 @@ Programming Requirements
 | Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| TBD | Not Started |  |
 | Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| TBD | Not Started |  |
 | Write sources | Gustavo | Not Started |  |
-| Assemble final report | TBD | Not Started |  |
+| Assemble final report | Camilla | Not Started |  |
 | Review final submission package | TBD | Not Started |  |
 
 
