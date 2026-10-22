@@ -10,8 +10,8 @@ package project2_SetOperations;
  */
 public class Functions {
 
-    private final float[] first = new float[10];
-    private final float[] second = new float[10];
+    private float[] first = new float[10];
+    private float[] second = new float[10];
 
     /**
      * constructor with defensive copies
