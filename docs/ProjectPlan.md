@@ -133,37 +133,37 @@ Programming Requirements
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Write introduction – explain the problem and why it is interesting/relevant. | Camilla | Not Started |  |
-| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | Camilla/Team | Not Started |  |
-| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | Camilla | Not Started |  |
+| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | Ben | Not Started |  |
+| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | Gustavo | Not Started |  |
 | Create tables with program results for all ordinary set operations| Camilla | Not Started |  |
 | Create tables with program results for all multiset operations| Camilla | Not Started |  |
-| Complete `README.md` | TBD | Not Started |  |
+| Complete `README.md` | Camilla | Started |  |
 | Complete `CONTRIBUTIONS.md` | Team | Not Started |  |
 | Record team screencast | Team | Not Started|  |
 | Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | Not Started |
 | Edit team screencast | Gustavo | Not Started |  |
-| If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | Gustavo |  Not Started  |
-| Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | Gustavo | Not Started |
-| How easy or difficult is it to determine the type of set that you need to use based on the user’s natural-language query? Why? | TBD | Not Started |
-| Is it possible to store the data from one type of set (plain sets or multisets) in another type? Would you need to lose data in order to do so? Why? | TBD | Not Started |
-| Discuss what implications your answers to questions 1–4 have for someone trying to code an interface which would allow users to type in natural-language queries. | TBD | Not Started |
-| Discuss what implications your answers to questions 1–5 have for someone trying to code an interface which would allow users to access arbitrary types of data using natural language. | TBD | Not Started |
-| Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| TBD | Not Started |  |
-| Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| TBD | Not Started |  |
-| Write sources | Gustavo | Not Started |  |
+| 1- If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | Ben |  Not Started  |
+| 2- Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | Camilla | Not Started |
+| 3- How easy or difficult is it to determine the type of set that you need to use based on the user’s natural-language query? Why? | Gustavo | Not Started |
+| 4- Is it possible to store the data from one type of set (plain sets or multisets) in another type? Would you need to lose data in order to do so? Why? | Camilla | Not Started |
+| 5- Discuss what implications your answers to questions 1–4 have for someone trying to code an interface which would allow users to type in natural-language queries. | Ben | Not Started |
+| 6- Discuss what implications your answers to questions 1–5 have for someone trying to code an interface which would allow users to access arbitrary types of data using natural language. | Gustavo | Not Started |
+| Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| Gustavo | Not Started |  |
+| Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| Ben | Not Started |  |
+| Write sources | Team | Not Started |  |
 | Assemble final report | Camilla | Not Started |  |
-| Review final submission package | TBD | Not Started |  |
+| Review final submission package | Team | Not Started |  |
 
 
 ## The Change Impact Analysis - Report
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| What changed: Identify the classes, functions, modules, or data representations you added or modified, and explain why. | TBD | Not Started |  |
-| What did not change: Identify components you reused without modification and explain what allowed that reuse. | TBD | Not Started |  |
-| Refactoring: Describe any restructuring of existing code. Explain how it supported the new functionality and how you verified existing Set and Multiset behavior. | TBD | Not Started |  |
-| Design strengths and weaknesses: Identify original assumptions or design choices that made the extension easier or more difficult. | TBD | Not Started |  |
-| Lessons learned: Explain what you would design differently if starting again and connect that lesson to this change order. | TBD | Not Started |  |
+| What changed: Identify the classes, functions, modules, or data representations you added or modified, and explain why. | Ben | Not Started |  |
+| What did not change: Identify components you reused without modification and explain what allowed that reuse. | Ben | Not Started |  |
+| Refactoring: Describe any restructuring of existing code. Explain how it supported the new functionality and how you verified existing Set and Multiset behavior. | Ben | Not Started |  |
+| Design strengths and weaknesses: Identify original assumptions or design choices that made the extension easier or more difficult. | Ben | Not Started |  |
+| Lessons learned: Explain what you would design differently if starting again and connect that lesson to this change order. | Ben | Not Started |  |
 ---
 
 # Milestones
