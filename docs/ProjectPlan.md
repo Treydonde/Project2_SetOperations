@@ -97,13 +97,13 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Choose a structure to store element counts | TBD |Not started|---|
-| Implement multiset representation | TBD | Not started | --- |
-| Implement multiset union | Gustavo | Not started| --- |
+| Choose a structure to store element counts | Ben |Not started|---|
+| Implement multiset representation | Ben | Not started | --- |
+| Implement multiset union | Ben | Not started| --- |
 | Implement multiset intersection| TBD |Not started| --- |
 | Implement multiset difference | TBD |Not started|---|
-| Implement multiset sum | Gustavo |Not started|---|
-| Display elements and their counts | TBD |Not started|---|
+| Implement multiset sum | Gustavo | Done |---|
+| Display elements and their counts | Gustavo | Done |---|
 
 ---
 
@@ -121,10 +121,10 @@ Programming Requirements
 |---|---|---|---|
 | Create test plan | Gustavo | In Progress |  |
 | Test ordinary set operations | Gustavo | In Progress | [Union_tests](https://github.com/Treydonde/Project2_SetOperations/tree/tests/Union_tests), [intersection_tests](https://github.com/Treydonde/Project2_SetOperations/tree/tests/intersection_tests),  |
-| Test multiset operations | TBD | Not started| --- |
-| Test sets with no common elements| TBD |Not started| --- |
-| Test empty sets or multisets | TBD |Not started|---|
-| Test repeated elements in multisets | TBD |Not started|---|
+| Test multiset operations | Gustavo | Done | --- |
+| Test sets with no common elements| TBD | Done | --- |
+| Test empty sets or multisets | Gustavo | Done |---|
+| Test repeated elements in multisets | Gustavo |Not started|---|
 
 ---
 
