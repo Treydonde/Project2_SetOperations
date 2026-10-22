@@ -111,6 +111,5 @@ Additional project documentation is located in the `docs` folder:
 - Benjamin Shaw
 - Camilla Feitosa Nunes
 - Gustavo Cabral
-- Paulina Cruz
 
 **Course:** CS 2430, Section 002 - Fall 2026
