@@ -71,13 +71,14 @@ public class Functions {
      * @param comp
      * @return comp
      */
-    public float[] complement(float[] comp) {
+    public float[] complement(float[] a) {
+        float[] result = new float[a.length];
 
-        for (int i = 0; i < 10; i++) {
-            comp[i] = 1 - comp[i];
+        for (int i = 0; i < a.length; i++) {
+            result[i] = 1 - a[i];
         }
 
-        return comp;
+        return result;
     }
 
     /**
