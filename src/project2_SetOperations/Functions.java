@@ -53,7 +53,9 @@ public class Functions {
     }
 
     /**
-     *
+     * Calculates the difference by taking the mathematical difference
+     * of first[i] and second[i] and constraining the lower bound to 0
+     * then assigning to multidiff[i]
      *
      * @return
      */
@@ -93,5 +95,15 @@ public class Functions {
         }
 
         return symmDiff;
+    }
+
+    public float[] sum() {
+        float[] result = new float[first.length];
+
+        for (int i = 0; i < first.length; i++) {
+            result[i] = first[i] + second[i];
+        }
+
+        return result;
     }
 }
