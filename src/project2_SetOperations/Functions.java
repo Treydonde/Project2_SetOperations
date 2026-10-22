@@ -68,7 +68,7 @@ public class Functions {
     /**
      * Does the complement of the value that is given in
      *
-     * @param comp
+     * @param a
      * @return comp
      */
     public float[] complement(float[] a) {
