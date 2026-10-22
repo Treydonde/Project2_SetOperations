@@ -15,7 +15,7 @@ public class Functions {
      * @param first
      * @param second
      */
-    public Functions() {
+    public Functions(float[] first, float[] second) {
         this.first = first;
         this.second = second;
     }
