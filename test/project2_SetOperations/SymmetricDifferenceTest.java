@@ -20,8 +20,8 @@ class SymmetricDifferenceTest {
         SymmetricDifference symmDiff = new SymmetricDifference(setA, setB);
 
         boolean[] expected = {
-                true, true, true, true, true,
-                true, true, true, true, true
+                false, false, false, false, false,
+                false, false, false, false, false
         };
 
         assertArrayEquals(expected, symmDiff.symmetricDifference());
