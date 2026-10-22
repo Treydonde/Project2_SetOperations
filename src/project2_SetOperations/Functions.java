@@ -5,8 +5,8 @@ package project2_SetOperations;
  *
  * Group 2
  * Gustavo Cabral, Ben Shaw, Camilla Feitosa Nunes
- * Course and section (CS 2430, section ___)
- * Project name (Programming Project 2 – (term) 202_)
+ * Course and section (CS 2430, section 002)
+ * Project name (Programming Project 2 – (Fall) 2026)
  */
 public class Functions {
 
