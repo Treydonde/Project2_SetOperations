@@ -1,5 +1,6 @@
 package project2_SetOperations;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -34,7 +35,21 @@ public class Main {
         System.out.println();
 
         //fuzzy set representation
+        float[] fuzzyA = {0.1f, 0.8f, 0.4f, 0.9f, 0.1f, 0.6f, 0.5f, 0.8f, 0.3f, 0.6f};
+        float[] fuzzyB = {0.7f, 0.2f, 0.9f, 0.4f, 0.8f, 0.1f, 0.6f, 0.4f, 0.9f, 0.1f};
+        Functions fuzzy1 = new Functions(fuzzyA, fuzzyB);
 
+        float[] fuzzyC = {0.3f, 0.7f, 0.1f, 0.6f, 0.5f, 1.0f, 0.2f, 0.5f, 0.8f, 0.2f};
+        float[] fuzzyD = {0.6f, 0.0f, 0.9f, 0.3f, 0.7f, 0.4f, 1.0f, 0.2f, 0.6f, 0.4f};
+        Functions fuzzy2 = new Functions(fuzzyC, fuzzyD);
+
+        System.out.println("~~~~ Fuzzy Set Operations ~~~~");
+        System.out.println();
+        System.out.println("----Fuzzy Set 1----");
+        printFuzzySet(fuzzyA, fuzzyB, fuzzy1);
+        System.out.println();
+        System.out.println("----Fuzzy Set 2----");
+        printFuzzySet(fuzzyC, fuzzyD, fuzzy2);
 
         //multi-set representation
         float[] multiA = {4.0f, 8.0f, 1.0f, 6.0f, 0.0f, 9.0f, 3.0f, 7.0f, 2.0f, 5.0f};
@@ -61,9 +76,18 @@ public class Main {
         printMultiSetOperations(multiE, multiF, multiset3);
     }
 
+    private static void printFuzzySet(float[] fuzzyA, float[] fuzzyB, Functions fuzzy1) {
+        System.out.println("First subset: " + Arrays.toString(fuzzyA));
+        System.out.println("Second subset: " + Arrays.toString(fuzzyB));
+        System.out.printf("Complement: \n" + Arrays.toString(fuzzy1.complement(fuzzyA)) + "\n");
+        System.out.printf("Union: \n" + Arrays.toString(fuzzy1.union()) + "\n");
+        System.out.printf("Intersection: \n" + Arrays.toString(fuzzy1.intersection()) + "\n");
+        System.out.println();
+    }
+
     private static void printMultiSetOperations(float[] multiA, float[] multiB, Functions multiset) {
-        System.out.println("First subset:" + Arrays.toString(multiA));
-        System.out.println("Second subset:" + Arrays.toString(multiB));
+        System.out.println("First subset: " + Arrays.toString(multiA));
+        System.out.println("Second subset: " + Arrays.toString(multiB));
         System.out.println();
         System.out.printf("Union: \n" + Arrays.toString(multiset.union()) + "\n");
         System.out.printf("Intersection: \n" + Arrays.toString(multiset.intersection()) + "\n");
