@@ -111,9 +111,9 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Implement fuzzy union | TBD | Not started| --- |
-| Implement fuzzy complement | TBD |Not started| --- |
-| Implement fuzzy intersect | TBD |Not started|---|
+| Implement fuzzy union | Ben | Done| --- |
+| Implement fuzzy complement | Ben | Done| --- |
+| Implement fuzzy intersect | Ben | Done|---|
 
 ## Testing 
 
