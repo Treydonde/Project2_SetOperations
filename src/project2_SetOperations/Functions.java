@@ -15,7 +15,7 @@ public class Functions {
      * @param first
      * @param second
      */
-    public Functions(float[] first, float[] second) {
+    public Functions() {
         this.first = first;
         this.second = second;
     }
@@ -24,7 +24,7 @@ public class Functions {
      *
      * @return
      */
-    public float[] union(float[] first, float[] second) {
+    public float[] union() {
 
         float[] union = new float[10];
 
@@ -52,7 +52,7 @@ public class Functions {
      *
      * @return
      */
-    public float[] difference(float[] first, float[] second) {
+    public float[] difference() {
         float[] multiDiff = new float[10];
         for (int i = 0; i < 10; i++) {
             multiDiff[i] = first[i] - second[i];
@@ -78,10 +78,12 @@ public class Functions {
     }
 
     public float[] symmetricDifference() {
+        float[] symmDiff = new float[first.length];
 
-        float[] diffA = difference(first, second);
-        float[] diffB = difference(second, first);
+        for (int i = 0; i < first.length; i++) {
+            symmDiff[i] = Math.abs(first[i] - second[i]);
+        }
 
-        return union(diffA, diffB);
+        return symmDiff;
     }
 }
