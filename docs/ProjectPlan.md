@@ -119,7 +119,7 @@ This structure allows us to use the same methods for different types of sets ins
 
 ## Part 2 - Multiset Operations
 
-| Task | Owner | Status | Evidence (Commit) |
+| Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Choose structure to store element counts | Benjamin | Done (float arrays) | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4) |
 | Implement multiset representation | Ben/Gustavo  | Done | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4), [5cf5006](https://github.com/Treydonde/Project2_SetOperations/commit/5cf5006) |
@@ -132,7 +132,7 @@ This structure allows us to use the same methods for different types of sets ins
 
 ## Part 3 - Fuzzy Set / Multiset Change Request
 
-| Task | Owner | Status | Evidence (Commit) |
+| Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Use float membership degrees between 0.0 and 1.0 | Ben/Gustavo | Done for hard-coded examples | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4), [f5a3813](https://github.com/Treydonde/Project2_SetOperations/commit/f5a3813) |
 | Implement fuzzy complement | Gustavo/Ben | Done | [22be3bc](https://github.com/Treydonde/Project2_SetOperations/commit/22be3bc) |
@@ -144,7 +144,7 @@ This structure allows us to use the same methods for different types of sets ins
 
 ## Testing
 
-| Task | Owner | Status | Evidence (Commit) |
+| Task | Owner | Status | Evidence  |
 |---|---|---|---|
 | Create test plan and JUnit cases | Gustavo | Done | [b16db52](https://github.com/Treydonde/Project2_SetOperations/commit/b16db52), [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
 | Test ordinary set operations | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
