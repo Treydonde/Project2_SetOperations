@@ -42,7 +42,16 @@ Use a data structure that keeps track of how many times each element appears and
 - Multiset Difference (subtract counts, not below zero)
 - Multiset Sum (add counts)
 
+Part 3 – Fuzzy Sets
+
+Use float arrays with membership values between 0.0 and 1.0 to represent fuzzy sets and perform:
+
+- **Complement:** Subtract the membership value from 1.
+- **Union:** Use the maximum membership value.
+- **Intersection:** Use the minimum membership value.
+
 The program will display the results of each operation with clear labels.
+
 
 Programming Requirements
 
@@ -50,13 +59,28 @@ Programming Requirements
 - Display ordinary set results as bit strings or Boolean arrays and element-name listings.
 - Use at least two elements with repeated occurrences in both multisets.
 - Include at least 2–3 representative test cases and at least one edge case.
-- Clearly separate ordinary set results from multiset results.
+- Clearly separate ordinary set, multiset, and fuzzy set results.
+- Use membership values between 0.0 and 1.0 for fuzzy sets.
+- Test fuzzy sets using values of 0.0, 1.0, and values between them.
+- Handle missing elements and invalid membership values.
+- Use a small tolerance when comparing floating-point results.
+- Re-run ordinary set and multiset tests after adding fuzzy sets.
 - Include comments explaining the major sections of code.
 - Make sure the program runs without modifications in a standard Java environment.
   
 ---
 
 ## Planned Java Classes
+
+Our original plan was to create separate Java classes for the different ordinary set operations. After receiving the fuzzy-set change order, we changed our approach and decided to use one shared class for the operations.
+
+The final project uses the following classes:
+
+- **Main.java:** Creates the arrays, runs the different operations, and displays the results.
+- **Functions.java:** Contains the methods for ordinary set, multiset, and fuzzy set operations.
+- **FunctionsTest.java:** Uses JUnit 5 to test the operations and compare expected and actual results.
+
+This structure allows us to use the same methods for different types of sets instead of creating separate classes for every operation.
 
 ---
 
@@ -83,8 +107,8 @@ Programming Requirements
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Define universal set with at least 10 elements | TBD |---|---|
-|Implement Boolean array representation for ordinary sets | Team | --- |---|
+| Define universal set with at least 10 elements | Gustavo |Done |[b16db52](https://github.com/Treydonde/Project2_SetOperations/commit/b16db52), [ad1f4bf](https://github.com/Treydonde/Project2_SetOperations/commit/ad1f4bf)|
+|Implement Boolean array representation for ordinary sets | Ben/ Gustavo helped with other original classes | Done in earlier version; final code uses float arrays | [6483ce1](https://github.com/Treydonde/Project2_SetOperations/commit/6483ce1), [f715583](https://github.com/Treydonde/Project2_SetOperations/commit/f715583) 
 | NOT(A) – complement of A with respect to the universal set | Gustavo |Done| [99acf4d](https://github.com/Treydonde/Project2_SetOperations/commit/99acf4d6fb6b17ecd30fb55f76aa58eb258331d9) |
 | A ∪ B – union | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
 | A ∩ B – intersection | Ben | Done | [Commit 7d03e15](https://github.com/Treydonde/Project2_SetOperations/commit/7d03e15d5c8aa78e24d8639faf35137ec6639d66) |
@@ -93,77 +117,81 @@ Programming Requirements
 
 ---
 
-# Part 2 - Multiset Operations
+## Part 2 - Multiset Operations
 
-| Task | Owner | Status | Evidence |
+| Task | Owner | Status | Evidence (Commit) |
 |---|---|---|---|
-| Choose a structure to store element counts | Ben |Not started|---|
-| Implement multiset representation | Ben | Not started | --- |
-| Implement multiset union | Ben | Not started| --- |
-| Implement multiset intersection| TBD |Not started| --- |
-| Implement multiset difference | TBD |Not started|---|
-| Implement multiset sum | Gustavo | Done |---|
-| Display elements and their counts | Gustavo | Done |---|
+| Choose structure to store element counts | Benjamin | Done (float arrays) | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4) |
+| Implement multiset representation | Ben/Gustavo  | Done | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4), [5cf5006](https://github.com/Treydonde/Project2_SetOperations/commit/5cf5006) |
+| Implement multiset union | Ben | Done | [03a621d](https://github.com/Treydonde/Project2_SetOperations/commit/03a621d) |
+| Implement multiset intersection | Ben | Done | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4) |
+| Implement multiset difference | Ben | Done | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4) |
+| Implement multiset sum | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Display elements and their counts | Gustavo | Done  | [5cf5006](https://github.com/Treydonde/Project2_SetOperations/commit/5cf5006) |
+| Use repeated occurrences in both multisets | Gustavo | Done | [5cf5006](https://github.com/Treydonde/Project2_SetOperations/commit/5cf5006) |
 
----
+## Part 3 - Fuzzy Set / Multiset Change Request
 
-# Fuzzy Set/Multiset Change Request
-
-| Task | Owner | Status | Evidence |
+| Task | Owner | Status | Evidence (Commit) |
 |---|---|---|---|
-| Implement fuzzy union | Ben | Done| --- |
-| Implement fuzzy complement | Ben | Done| --- |
-| Implement fuzzy intersect | Ben | Done|---|
+| Use float membership degrees between 0.0 and 1.0 | Ben/Gustavo | Done for hard-coded examples | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4), [f5a3813](https://github.com/Treydonde/Project2_SetOperations/commit/f5a3813) |
+| Implement fuzzy complement | Gustavo/Ben | Done | [22be3bc](https://github.com/Treydonde/Project2_SetOperations/commit/22be3bc) |
+| Implement fuzzy union | Ben | Done | [03a621d](https://github.com/Treydonde/Project2_SetOperations/commit/03a621d) |
+| Implement fuzzy intersection | Ben | Done | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4) |
+| Include two fuzzy-set examples in Main | Gustavo | Done | [87748e1](https://github.com/Treydonde/Project2_SetOperations/commit/87748e1), [f5a3813](https://github.com/Treydonde/Project2_SetOperations/commit/f5a3813) |
+| Test fuzzy operations including zero, full and partial membership | Gustavo | Done| [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Combine old classes into one shared Functions class | Ben/Gustavo | Done | [36e80d4](https://github.com/Treydonde/Project2_SetOperations/commit/36e80d4), [f715583](https://github.com/Treydonde/Project2_SetOperations/commit/f715583) |
 
-## Testing 
+## Testing
 
-| Task | Owner | Status | Evidence |
+| Task | Owner | Status | Evidence (Commit) |
 |---|---|---|---|
-| Create test plan | Gustavo | In Progress |  |
-| Test ordinary set operations | Gustavo | In Progress | [Union_tests](https://github.com/Treydonde/Project2_SetOperations/tree/tests/Union_tests), [intersection_tests](https://github.com/Treydonde/Project2_SetOperations/tree/tests/intersection_tests),  |
-| Test multiset operations | Gustavo | Done | --- |
-| Test sets with no common elements| TBD | Done | --- |
-| Test empty sets or multisets | Gustavo | Done |---|
-| Test repeated elements in multisets | Gustavo |Not started|---|
-
+| Create test plan and JUnit cases | Gustavo | Done | [b16db52](https://github.com/Treydonde/Project2_SetOperations/commit/b16db52), [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Test ordinary set operations | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Test multiset operations | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Test fuzzy set operations | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Test sets with no common elements | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Test empty sets or multisets | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Test repeated counts in multisets | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
+| Use tolerance for floating-point values | Gustavo | Done | [104b151](https://github.com/Treydonde/Project2_SetOperations/commit/104b151) |
 ---
 
 ## Report and Final Deliverables
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Write introduction – explain the problem and why it is interesting/relevant. | Camilla | Not Started |  |
-| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | Ben | Not Started |  |
-| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | Gustavo | Not Started |  |
-| Create tables with program results for all ordinary set operations| Camilla | Not Started |  |
-| Create tables with program results for all multiset operations| Camilla | Not Started |  |
-| Complete `README.md` | Camilla | Started |  |
-| Complete `CONTRIBUTIONS.md` | Team | Not Started |  |
-| Record team screencast | Team | Not Started|  |
-| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | Not Started |
-| Edit team screencast | Gustavo | Not Started |  |
-| 1- If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | Ben |  Not Started  |
-| 2- Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | Camilla | Not Started |
-| 3- How easy or difficult is it to determine the type of set that you need to use based on the user’s natural-language query? Why? | Gustavo | Not Started |
-| 4- Is it possible to store the data from one type of set (plain sets or multisets) in another type? Would you need to lose data in order to do so? Why? | Camilla | Not Started |
-| 5- Discuss what implications your answers to questions 1–4 have for someone trying to code an interface which would allow users to type in natural-language queries. | Ben | Not Started |
-| 6- Discuss what implications your answers to questions 1–5 have for someone trying to code an interface which would allow users to access arbitrary types of data using natural language. | Gustavo | Not Started |
-| Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| Gustavo | Not Started |  |
-| Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| Ben | Not Started |  |
-| Write sources | Team | Not Started |  |
-| Assemble final report | Camilla | Not Started |  |
-| Review final submission package | Team | Not Started |  |
+| Write introduction – explain the problem and why it is interesting/relevant. | Camilla | Done |  |
+| Write Implementation / Methods – describe the data structures you used for ordinary sets and for multisets, and why. | Ben | Done |  |
+| Write Verification Approach – explain how you tested (include at least 2–3 representative cases + at least one edge case). | Gustavo | Done |  |
+| Create tables with program results for all ordinary set operations| Camilla | Done |  |
+| Create tables with program results for all multiset operations| Camilla | Done |  |
+| Complete `README.md` | Camilla | Done |  |
+| Complete `CONTRIBUTIONS.md` | Team | Done |  |
+| Record team screencast | Team | Done |  |
+| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | Done |
+| Edit team screencast | Gustavo/Camilla | Done |  |
+| 1- If you used different arrays/structures/classes to represent the different types of sets, would it be possible to have overloaded methods or operations that would provide the correct functionality regardless of whether you were using sets or multisets? Why or why not? | Camilla |  Done  |
+| 2- Would it be possible to use the same data set/structure/class to store sets and multisets? Why or why not? | Camilla | Done |
+| 3- How easy or difficult is it to determine the type of set that you need to use based on the user’s natural-language query? Why? | Gustavo | Done |
+| 4- Is it possible to store the data from one type of set (plain sets or multisets) in another type? Would you need to lose data in order to do so? Why? | Camilla | Done |
+| 5- Discuss what implications your answers to questions 1–4 have for someone trying to code an interface which would allow users to type in natural-language queries. | Camilla | Done |
+| 6- Discuss what implications your answers to questions 1–5 have for someone trying to code an interface which would allow users to access arbitrary types of data using natural language. | Gustavo | Done |
+| Write Conclusion – what you learned about mapping mathematical structures to code and why user queries complicate things| Gustavo | Done |  |
+| Write Summary of Work Done / Lessons Learned – one short paragraph reflecting on problems, tools, and what you’d improve.| Camilla | Done |  |
+| Write sources | Team | Done |  |
+| Assemble final report | Camilla | Done |  |
+| Review final submission package | Team | Done |  |
 
 
 ## The Change Impact Analysis - Report
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| What changed: Identify the classes, functions, modules, or data representations you added or modified, and explain why. | Ben | Not Started |  |
-| What did not change: Identify components you reused without modification and explain what allowed that reuse. | Ben | Not Started |  |
-| Refactoring: Describe any restructuring of existing code. Explain how it supported the new functionality and how you verified existing Set and Multiset behavior. | Ben | Not Started |  |
-| Design strengths and weaknesses: Identify original assumptions or design choices that made the extension easier or more difficult. | Ben | Not Started |  |
-| Lessons learned: Explain what you would design differently if starting again and connect that lesson to this change order. | Ben | Not Started |  |
+| What changed: Identify the classes, functions, modules, or data representations you added or modified, and explain why. | Ben | Done|  |
+| What did not change: Identify components you reused without modification and explain what allowed that reuse. | Ben | Done |  |
+| Refactoring: Describe any restructuring of existing code. Explain how it supported the new functionality and how you verified existing Set and Multiset behavior. | Ben | Done |  |
+| Design strengths and weaknesses: Identify original assumptions or design choices that made the extension easier or more difficult. | Ben | Done |  |
+| Lessons learned: Explain what you would design differently if starting again and connect that lesson to this change order. | Ben | Done |  |
 ---
 
 # Milestones
@@ -177,7 +205,7 @@ Programming Requirements
 - Project Plan updated
 - 2 Design artifacts included in `/docs`
 
-**Status:** Started
+**Status:** Done
 
 ## Milestone 2 - Core Implementation - Target: 10-19-2026
 
@@ -186,7 +214,7 @@ Programming Requirements
 - Main program integrated
 - Outputs clearly labeled
 
-**Status:** Not started
+**Status:** Done
 
 ## Milestone 3 - Testing and Data Collection - Target: 10-21-2026
 
@@ -196,7 +224,7 @@ Programming Requirements
 - Representative test results collected
 - Results ready for report
 
-**Status:** Not started
+**Status:** Done
 
 ## Milestone 4 - Final Report and Submission - Target: 2026-10-23
 
