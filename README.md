@@ -1,25 +1,28 @@
+
 # Programming Project 2 - Sets Operations
 
 ## Overview
 
-This project focuses on implementing ordinary set and multiset operations using Java.
+This project focuses on implementing ordinary set, multiset, and fuzzy set operations using Java.
 
-The project is divided into two parts:
+The project is divided into three parts:
 
-**Part 1 - Ordinary Sets:** Uses Boolean arrays to represent sets and perform operations.
+**Part 1 - Ordinary Sets:** Uses arrays with 0s and 1s to represent sets and perform operations.
 
 **Part 2 - Multisets:** Uses arrays to keep track of how many times each element appears and perform operations.
 
-The project also explores the differences between sets and multisets and how natural-language questions can make it difficult to determine which type of set should be used.
+**Part 3 - Fuzzy Sets:** Uses arrays with values between 0.0 and 1.0 to represent different degrees of membership.
 
-## Ordinary Set Operations 
+The project also explores the differences between these types of sets and how natural-language questions can make it difficult to determine which type should be used.
 
-Ordinary sets are represented using Boolean arrays. Each position in the array represents an element in the universal set.
+## Ordinary Set Operations
 
-- true means the element belongs to the set.
-- false means the element does not belong to the set.
+Ordinary sets are represented using arrays with 0s and 1s in the Main class. Each position in the array represents an element in the universal set.
 
-The universal set contains at least 10 elements.
+- 1 means the element belongs to the set.
+- 0 means the element does not belong to the set.
+
+The universal set contains 10 elements.
 
 The program performs the following operations:
 
@@ -29,13 +32,13 @@ The program performs the following operations:
 - **Difference (A − B):** Finds the elements that belong to A but not B.
 - **Symmetric Difference (A ⊕ B):** Finds the elements that belong to A or B, but not both.
 
-The program displays the results as Boolean arrays or bit strings and lists the elements in each resulting set.
+The Main class displays the results as arrays containing 0s and 1s.
 
 ## Multiset Operations
 
 Unlike ordinary sets, multisets allow elements to appear more than once.
 
-For this part, the proposed implementation uses integer arrays to store the number of times each element appears.
+For this part, we used float arrays to store the number of times each element appears.
 
 The program performs the following operations:
 
@@ -48,8 +51,27 @@ Both multisets include at least two elements that appear more than once.
 
 The results are clearly labeled to separate multiset operations from ordinary set operations.
 
+## Fuzzy Set Operations
+
+Fuzzy sets allow elements to have different degrees of membership instead of only being present or absent.
+
+For this part, we used float arrays with values between 0.0 and 1.0.
+
+- 0.0 means the element is not a member of the set.
+- 1.0 means the element is a full member of the set.
+- Values between 0.0 and 1.0 represent partial membership.
+
+The program performs the following operations:
+
+- **Complement:** Subtracts the membership value from 1.
+- **Union:** Uses the higher membership value from A and B.
+- **Intersection:** Uses the lower membership value from A and B.
+
+The fuzzy set operations use the same Functions class as the multiset operations.
+
 ## Running the Project
-The program is intended to run from Main.java.
+
+The program runs from Main.java.
 
 To run the project in Eclipse:
 
@@ -58,32 +80,48 @@ To run the project in Eclipse:
 3. Select **Run As → Java Application**.
 4. View the results in the Eclipse Console.
 
-The program is designed to display:
+The program displays:
 
-- The original sets A and B
-- The results of all ordinary set operations
-- The original multisets A and B with their element counts
-- The results of all multiset operations
+- The original ordinary sets and their operations.
+- The original fuzzy sets and their operations.
+- The original multisets and their operations.
 
-The results will also be used in the final report to explain how each operation works.
+The results are also used in the final report to explain how each operation works.
 
-## Project Structure 
+## Project Structure
 
+The project contains the following folders and files:
 
-## Testing 
+**src folder:**
 
-JUnit 5 is planned for automated testing of the ordinary set and multiset operations.
+- Main.java - Runs the program and displays the results.
+- Functions.java - Contains the methods used for the set operations.
 
-The tests will check that each operation produces the expected results.
+**test folder:**
 
-The project will include tests for:
+- FunctionsTest.java - Tests ordinary set, multiset, and fuzzy set operations.
 
-- Ordinary set operations
-- Multiset operations
-- Sets with no common elements
-- Empty sets or multisets
-- Repeated elements in multisets
-- Other representative and edge cases
+**docs folder:**
+
+Contains the project plan and design documents.
+
+## Testing
+
+We used JUnit 5 to test the ordinary set, multiset, and fuzzy set operations.
+
+The tests compare the expected results with the actual results.
+
+We tested:
+
+- Ordinary set operations.
+- Multiset operations.
+- Fuzzy set operations.
+- Sets with no common elements.
+- Empty sets.
+- Repeated elements in multisets.
+- Different membership values in fuzzy sets.
+
+For floating-point values, we used a tolerance of 0.0001 to account for small differences in calculations.
 
 To run the tests in Eclipse:
 
@@ -92,17 +130,16 @@ To run the tests in Eclipse:
 3. Select **Run As → JUnit Test**.
 4. View the test results in Eclipse.
 
-
-## Documentation 
+## Documentation
 
 Additional project documentation is located in the `docs` folder:
 
-- `ProjectPlan.md` - project tasks, ownership, milestones, and progress
-- `UML.md` - current class design
-- `Sequence_PseudoCode.md` - algorithm and design pseudocode
-- `CONTRIBUTIONS.md` - team member contributions and evidence
-- Additional project documentation is located in the docs folder
-- The final report will include the implementation methods, testing results, and a discussion of how natural-language queries can relate to ordinary sets, multisets, and fuzzy sets.
+- `ProjectPlan.md` - Project tasks, ownership, milestones, and progress.
+- `UML.md` - Current class design.
+- `Sequence_PseudoCode.md` - Algorithm and design pseudocode.
+- `CONTRIBUTIONS.md` - Team member contributions and evidence.
+
+The final report includes the implementation methods, testing results, discussion of natural-language queries, and fuzzy set Change Impact Analysis.
 
 ## Contributors
 
@@ -113,3 +150,4 @@ Additional project documentation is located in the `docs` folder:
 - Gustavo Cabral
 
 **Course:** CS 2430, Section 002 - Fall 2026
+
