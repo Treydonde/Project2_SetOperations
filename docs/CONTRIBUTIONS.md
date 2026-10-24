@@ -49,6 +49,6 @@ evidence pointers such as files, commits, pull requests, or repository history.
 |---|---|
 | Updated final version of `README.md` | [14dcae1](https://github.com/Treydonde/Project2_SetOperations/commit/14dcae1), [91070e0](https://github.com/Treydonde/Project2_SetOperations/commit/91070e0), [0f2fffb](https://github.com/Treydonde/Project2_SetOperations/commit/0f2fffb) |
 | Updated final version of  `Sequence_PseudoCode.md` | [4e52b47](https://github.com/Treydonde/Project2_SetOperations/commit/4e52b47), [62b8729](https://github.com/Treydonde/Project2_SetOperations/commit/62b8729), [97ec591](https://github.com/Treydonde/Project2_SetOperations/commit/97ec591) |
-| Updated `CONTRIBUTIONS.md` | |
+| Updated `CONTRIBUTIONS.md` | [73d506c]([https://github.com/Treydonde/Project2_SetOperations/commit/3874bcac52e4139af4308a45e135ff3433089258](https://github.com/Treydonde/Project2_SetOperations/commit/73d506c))
 | Updated final version of `ProjectPlan.md` and documented task progress | [f9fb0d4](https://github.com/Treydonde/Project2_SetOperations/commit/f9fb0d4), [284643f](https://github.com/Treydonde/Project2_SetOperations/commit/284643f), [ae3b7be](https://github.com/Treydonde/Project2_SetOperations/commit/ae3b7be) |
 | Prepared the team report and assembled | Separate report file for Canvas |
